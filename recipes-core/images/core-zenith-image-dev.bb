@@ -11,5 +11,5 @@ MACHINE_NAME ?= "${MACHINE}"
 IMAGE_NAME = "${MACHINE_NAME}_${IMAGE_BASENAME}"
 
 IMAGE_FEATURES += "ssh-server-openssh tools-debug debug-tweaks"
-CORE_IMAGE_EXTRA_INSTALL += "ethtool evtest fbset i2c-tools memtester apt git gcc cmake make"
+CORE_IMAGE_EXTRA_INSTALL += "ethtool evtest fbset i2c-tools memtester apt git gcc cmake make phoronix-test-suite"
 
