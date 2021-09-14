@@ -11,6 +11,5 @@ MACHINE_NAME ?= "${MACHINE}"
 IMAGE_NAME = "${MACHINE_NAME}_${IMAGE_BASENAME}"
 
 IMAGE_FEATURES += "tools-debug debug-tweaks"
-CORE_IMAGE_EXTRA_INSTALL += "ethtool evtest fbset i2c-tools memtester git"
 CORE_IMAGE_EXTRA_INSTALL += "ethtool evtest fbset i2c-tools memtester git phoronix-test-suite"
 
