@@ -12,5 +12,5 @@ IMAGE_NAME = "${MACHINE_NAME}_${IMAGE_BASENAME}"
 IMAGE_LINGUAS = "en-us"
 
 IMAGE_FEATURES += "splash"
-CORE_IMAGE_EXTRA_INSTALL = "sdbus-c++ opencv"
+CORE_IMAGE_EXTRA_INSTALL = "sdbus-c++ opencv mock"
 

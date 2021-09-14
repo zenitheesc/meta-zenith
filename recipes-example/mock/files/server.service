@@ -1,0 +1,8 @@
+[Unit]
+Description=simple mockup server
+
+[Service]
+ExecStart=/usr/bin/server
+
+[Install]
+WantedBy=multi-user.target
