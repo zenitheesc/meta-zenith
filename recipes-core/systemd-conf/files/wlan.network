@@ -1,0 +1,11 @@
+[Match]
+Name=wlan0
+
+[Network]
+Address=192.168.0.1/24
+DHCPServer=yes
+
+[DHCPServer]
+EmitDNS=yes
+target$ systemctl restart systemd‐networkd
+target$ systemctl status  systemd‐networkd ‐l 

@@ -12,5 +12,8 @@ IMAGE_NAME = "${MACHINE_NAME}_${IMAGE_BASENAME}"
 IMAGE_LINGUAS = "en-us"
 
 IMAGE_FEATURES += "splash ssh-server-openssh"
-CORE_IMAGE_EXTRA_INSTALL = "sdbus-c++ opencv"
+
+ZENITH_WIFI_FEATURES = "hostapd linux-firmware-rpidistro-bcm43430"
+
+CORE_IMAGE_EXTRA_INSTALL = "sdbus-c++ opencv ${ZENITH_WIFI_FEATURES}"
 
