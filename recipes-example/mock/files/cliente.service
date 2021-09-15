@@ -1,0 +1,10 @@
+[Unit]
+Description=simple mockup cliente
+Requires=server.service
+After=server.service
+
+[Service]
+ExecStart=/usr/bin/cliente
+
+[Install]
+WantedBy=multi-user.target
