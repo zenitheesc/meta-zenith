@@ -1,5 +1,5 @@
 <h1 align="center" style="color:white; background-color:black">meta-zenith</h1>
-<h4 align="center">[insert *brief* project description]</h4>
+<h4 align="center">This project is a Linux Distro booted with Systemd and designed to run on an Embedded System with the required components by Zenith, having the daemons and drivers developed by the group</h4>
 
 <p align="center">
 	<a href="http://zenith.eesc.usp.br/">
@@ -39,17 +39,41 @@
 
 ## Environment and tools
 
-`Add list of dependencies and software needed to run this project (if possible add the versions that were used in development).`
+`Dependencies:
+	• Poky (dunfell branch)
+	• Meta-openembedded/meta-oe
+	• Meta-openembedded/meta-python
+	• Meta-raspberrypi`
 
 ## Steps to run and debug
 
-`A simple list of steps indicating how one can run and test the project.`
+This project has two images: core-zenith-image (production without development tools) and core-zenith-image-dev (includes development tools) 
+
+To run the development image:
+	
+	• Enter in the poky file and run:
+	$ source oe-init-build-env
+
+	• Build the ZenithOs image by running:
+	$ bitbake core-zenith-image-dev
+	
+	• After the image be generated, it is already to run:
+	$ runqemu core-zenith-image-dev nographic
+	
+To run the production image:
+	
+	• Enter in the poky file and run:
+	$ source oe-init-build-env
+
+	• Build the ZenithOs image by running:
+	$ bitbake core-zenith-image
+	
+	• After the image be generated, it is already to run:
+	$ runqemu core-zenith-image nographic
 
 ## How to contribute
 
-`(optional, depends on the project) list of simple rules to help people work on the project.`
-
-`Examples: How to format a pull request\n How to format an issue`
+`Report bugs and/or feature-requests on our issue tab. Maybe there's something there waiting for you to work on!`
 
 ---
 
