@@ -28,5 +28,4 @@ do_install_append() {
     rm -rf /etc/systemd/system/multi-user.target.wants/nfs-statd.service
     rm -rf /etc/systemd/system/multi-user.target.wants/nfs-server.service
     rm -rf /etc/systemd/system/multi-user.target.wants/nfs-mountd.service
-    rm -rf /etc/systemd/timesyncd.conf 
 }
